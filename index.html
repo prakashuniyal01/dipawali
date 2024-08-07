@@ -12,8 +12,7 @@
     <section class="hero-sections">
         <img src="./image copy 6.png" alt="jhalars ">
         <div class="audio">
-            <p  >hi, <span id="receiver" ></span>  <br> 
-               
+            <p>hi, <span id="receiver"></span> <br>
                 You mean the world to me...
                 So this Diwali,
                 I made something for you!</p>
@@ -21,13 +20,12 @@
                 <img src="./image copy 7.png" alt="">
                 <span class="soul-music">music</span>
                 <img class="soul-music" src="./image copy 8.png" alt="">
-                <audio src="./happy_diwali.mp3" controls autoplay controlslist="nofullscreen nodownload noremoteplayback noplaybackrate foobar" ></audio>
+                <audio src="./happy_diwali.mp3" controls autoplay
+                    controlslist="nofullscreen nodownload noremoteplayback noplaybackrate foobar"></audio>
             </div>
-
         </div>
         <img class="deepak first-deepak" src="./image copy.png" alt="">
         <img class="deepak second-deepak" src="./image copy.png" alt="">
-
     </section>
     <section class="laxmi-janesh-ji">
         <div class="horizontal-divider">
@@ -51,7 +49,8 @@
         <div class="white-cart-container">
             <div class="white-cart">
                 <p>People say, “Diwali is the festival of lights.”</p>
-                <p>You know what, I can feel the positivity and happiness. My goal is to learn blockchain developer and I’m learning everyday, even today!</p>
+                <p>You know what, I can feel the positivity and happiness. My goal is to learn blockchain developer and
+                    I’m learning everyday, even today!</p>
             </div>
             <img class="little-girl" src="./image copy 4.png" alt="">
         </div>
@@ -72,14 +71,21 @@
             <p>happy Diwali and, </p>
             <h2>thank you for everyThink</h2>
         </div>
-        <h3 style="text-align: right;">Made with 💜 By prakash</h3>
+            <p style="text-align: center; margin: 1rem; " id="date"></p>
+        <p style="text-align: right;"> Made with 💜 By prakash</p>
+
     </section>
 
     <script>
         const receiverName = document.querySelector("#receiver");
-        const senderName = document.querySelector("#sender");
-        receiverName.innerText = new URLSearchParams(location.search).get("receiver");
-        senderName.innerText = new URLSearchParams(location.search).get("sender") || 'Prakash';
+        receiverName.innerText = new URLSearchParams(location.search).get("receiver") || 'Friend';
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const dateElement = document.getElementById('date');
+            const today = new Date();
+            const formattedDate = today.toDateString(); // Example: "Mon Aug 07 2024"
+            dateElement.textContent = ` ${formattedDate}`;
+        });
     </script>
 
     <!-- url http://127.0.0.1:5500/index.html?receiver=sanjna -->
