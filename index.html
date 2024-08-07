@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="hero-sections">
+        <img src="./image copy 6.png" alt="jhalars ">
+        <div class="audio">
+            <p  >hi, <span id="receiver" ></span>  <br> 
+               
+                You mean the world to me...
+                So this Diwali,
+                I made something for you!</p>
+            <div class="audio-container">
+                <img src="./image copy 7.png" alt="">
+                <span class="soul-music">music</span>
+                <img class="soul-music" src="./image copy 8.png" alt="">
+                <audio src="./happy_diwali.mp3" controls autoplay controlslist="nofullscreen nodownload noremoteplayback noplaybackrate foobar" ></audio>
+            </div>
+
+        </div>
+        <img class="deepak first-deepak" src="./image copy.png" alt="">
+        <img class="deepak second-deepak" src="./image copy.png" alt="">
+
+    </section>
+    <section class="laxmi-janesh-ji">
+        <div class="horizontal-divider">
+            <div class="horizontal-line"></div>
+            <div class="circal"></div>
+            <div class="circal"></div>
+            <div class="circal"></div>
+            <div class="horizontal-line"></div>
+        </div>
+        <img class="laxmi-janesh-img" src="./image copy 3.png" alt="">
+        <h1>Wishing You a Blessed and Prosperous Deepawali </h1>
+    </section>
+    <section class="laxmi-janesh-ji-2">
+        <div class="horizontal-divider">
+            <div class="horizontal-line"></div>
+            <div class="circal"></div>
+            <div class="circal"></div>
+            <div class="circal"></div>
+            <div class="horizontal-line"></div>
+        </div>
+        <div class="white-cart-container">
+            <div class="white-cart">
+                <p>People say, “Diwali is the festival of lights.”</p>
+                <p>You know what, I can feel the positivity and happiness. My goal is to learn web development and I’m learning everyday, even today!</p>
+            </div>
+            <img class="little-girl" src="./image copy 4.png" alt="">
+        </div>
+    </section>
+    <section class="two-photos">
+        <div class="horizontal-divider">
+            <div class="horizontal-line"></div>
+            <div class="circal"></div>
+            <div class="circal"></div>
+            <div class="circal"></div>
+            <div class="horizontal-line"></div>
+        </div>
+        <div class="imgss">
+            <img src="./image copy 9.png" alt="">
+            <img src="./image copy 10.png" alt="">
+        </div>
+        <div class="thankyou">
+            <p>happy Diwali and </p>
+            <h2>thank you for everyThink</h2>
+        </div>
+        <h3 style="text-align: right;">Made with 💜 By prakash</h3>
+    </section>
+
+    <script>
+        const receiverName = document.querySelector("#receiver");
+        const senderName = document.querySelector("#sender");
+        receiverName.innerText = new URLSearchParams(location.search).get("receiver");
+        senderName.innerText = new URLSearchParams(location.search).get("sender") || 'Prakash';
+    </script>
+
+    <!-- url http://127.0.0.1:5500/index.html?receiver=sanjna -->
+</body>
+
+</html>
